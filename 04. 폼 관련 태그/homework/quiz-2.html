@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 지원서</title>
+    <style>
+        legend{
+            font-weight: bold;
+        }
+        fieldset {
+            border: none;
+        }
+        form ul li{
+            list-style: none;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        label{
+            font-size: 14px;
+            width: 110px;
+            text-align: right;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <label>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</label><hr>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="">이름</label><input type="text" placeholder="공백없이 입력하세요">    
+                </li>
+                <li>
+                    <label for="">연락처</label><input type="tel">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend for="">지원 분야</legend>
+            <ul>
+                <li>
+                    <label><input type="radio" name="subject" value="web-publishing">웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject" value="web-app-dev">웹 어플리케이션 개발</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject" value="web-env-imprv">개발 환경 개선</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>지원 동기</legend>
+            <textarea name="purpose" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시 쓰기</button>
+        </fieldset>
+    </form>
+</body>
+</html>
