@@ -9,17 +9,19 @@
         table{
             width: 250px;
         }
-        th{
-            background-color: lightgray;
-        }
         td{
             padding: 5px;
         }
     </style>
 </head>
 <body>
-    <label>1인당 연간 설탕 소비량 (단위:kg)</label>
+    <!-- table[border="1"]>(caption>small)+(colgroup>col*2)+(tr*7>th+td) -->
     <table border="1">
+        <caption>1인당 연간 설탕 소비량 <small>(단위:kg)</small></caption>
+        <colgroup>
+            <col style="background-color: lightgray;">
+            <col>
+        </colgroup>
         <tr>
             <th>WHO 권장량</th>
             <td>18.25</td>
